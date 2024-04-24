@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "864251668554",
+    "project_id": "login-register-homework",
+    "storage_bucket": "login-register-homework.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864251668554:android:38a3149863e3e534ef1eb3",
+        "android_client_info": {
+          "package_name": "com.example.loginregisterhomework"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIQ3HFBTY4m3nZgfQkO0Kp_TD53C2fGDc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
