@@ -20,7 +20,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.Firebase;
+
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -29,7 +29,7 @@ public class Register extends AppCompatActivity {
 TextInputEditText editTextEmail, editTextPassword;
 Button btnRegister;
 FirebaseAuth mAuth;
-ProgressBar progressBar;
+
 TextView textView;
     @Override
     public void onStart() {
@@ -56,7 +56,7 @@ TextView textView;
         editTextEmail = findViewById(R.id.email);
         editTextPassword = findViewById(R.id.password);
         btnRegister = findViewById(R.id.btnRegister);
-        progressBar = findViewById(R.id.progressBar);
+
         textView = findViewById(R.id.loginNow);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +69,7 @@ TextView textView;
         btnRegister.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                progressBar.setVisibility(View.VISIBLE);
+
                 String email, password;
                 email = String.valueOf(editTextEmail.getText());
                 password = String.valueOf(editTextPassword.getText());
@@ -86,7 +86,7 @@ TextView textView;
                         .addOnCompleteListener( new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                progressBar.setVisibility(View.GONE);
+
                                 if (task.isSuccessful()) {
 
                                     Toast.makeText(Register.this, "Account created.",

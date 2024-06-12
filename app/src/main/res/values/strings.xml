@@ -7,4 +7,12 @@
     <string name="click_to_login">Click to Login</string>
     <string name="click_to_register">Click to Register</string>
     <string name="logout">LOGOUT</string>
+    <string name="firstname">FirstName</string>
+    <string name="lastname">LastName</string>
+    <string name="phonenumber">PhoneNumber</string>
+    <string name="feed">Feed</string>
+    <string name="profile">Profile</string>
+    <string name="gifts">Gifts</string>
+    <string name="scanner">Scanner</string>
+
 </resources>

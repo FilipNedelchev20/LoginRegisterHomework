@@ -35,18 +35,15 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.firebase.auth)
+    //implementation(libs.firebase.auth)
+   // implementation(libs.firebase.storage)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     // Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
+    implementation ("com.google.firebase:firebase-auth:20.0.2")
+    implementation ("com.google.firebase:firebase-firestore:23.0.2")
+    implementation ("com.google.firebase:firebase-storage:20.0.0")
+    implementation ("com.squareup.picasso:picasso:2.71828")
 
-    // When using the BoM, you don't specify versions in Firebase library dependencies
-
-    // TODO: Add the dependencies for Firebase products you want to use
-    // See https://firebase.google.com/docs/android/setup#available-libraries
-    // For example, add the dependencies for Firebase Authentication and Cloud Firestore
-    implementation("com.google.firebase:firebase-auth")
-    implementation("com.google.firebase:firebase-firestore")
 }
